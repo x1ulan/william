@@ -6,11 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-        new Crate({
-            server: '857881293618020362', // 道中家暴中心
-            channel: '925746429459308594' // #神奇的聊天室
-        })
+    <script >
+        const token = secret.TOKEN;
+const channelId = secret.ID;
+
+fetch(`https://discord.com/api/v10/channels/${channelId}/messages`, {
+  method: 'GET',
+  headers: {
+    'Authorization': `Bot ${token}`,
+  },
+})
+  .then(response => response.json())
+  .then(data => {
+    // 处理获取的消息数据
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error fetching messages:', error);
+  });
     </script>
 </body>
 </html>
