@@ -23,5 +23,5 @@ jobs:
     - name: Run Discord Fetch
       env:
         DISCORD_TOKEN: ${{ secrets.TOKEN }}
-        DISCORD_CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+        DISCORD_CHANNEL_ID: ${{ secrets.ID }}
       run: node discord-fetch.js
