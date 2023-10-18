@@ -1,0 +1,43 @@
+.warblock{
+    margin-left: 3vw;
+    padding-left: 2vw;
+    background-color: pink;
+    border-radius: 10px;
+    margin-right: 3vw;
+    opacity: 0;
+}
+.s-title{
+    font-family: sans-serif;
+    font-size: 2.5vw;
+    padding-top: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+@keyframes intro-all {
+    0%{transform:translateY(50px); opacity: 0;}
+    100%{transform:translateY(0px); opacity: 100;}
+}
+
+.footer{
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5vh;
+    word-wrap: normal;
+}
+
+@media screen and (max-width:900px){
+    .footer{
+        font-size: 3vh;
+        margin-top: 20vh;
+    }
+    .s-title{
+        font-size: 3vh;
+    }
+}
